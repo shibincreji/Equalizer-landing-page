@@ -1,0 +1,37 @@
+.section-footer {
+  @include respond-tab {
+    & {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    & .main-text {
+      grid-row: 2 / span 3;
+      grid-column: 1 / 4;
+      width: 80%;
+    }
+
+    & .social-media {
+      grid-row: 1 / span 3;
+      align-self: center;
+      justify-self: flex-end;
+    }
+  }
+
+  @include respond-desktop {
+    & {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    & .main-text {
+      grid-row: unset;
+      grid-column: unset;
+      width: 100%;
+    }
+
+    & .social-media {
+      grid-row: unset;
+      height: 100%;
+    }
+  }
+}

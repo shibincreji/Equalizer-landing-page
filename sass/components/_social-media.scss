@@ -1,0 +1,10 @@
+.social-media {
+  & > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  & > *:hover {
+    cursor: pointer;
+    filter: invert(73%) sepia(55%) saturate(591%) hue-rotate(327deg) brightness(106%) contrast(102%);
+  }
+}

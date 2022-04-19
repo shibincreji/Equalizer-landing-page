@@ -1,0 +1,64 @@
+.section-header {
+  padding: 0 2.4rem;
+  padding-top: 4rem;
+  margin-bottom: 16.8rem;
+
+  @include respond-tab {
+    padding: 0 4rem;
+    padding-top: 6rem;
+  }
+
+  @include respond-tab {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.section-app {
+  align-items: flex-end;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-image: linear-gradient(to bottom, $color-dark 50%, $color-white 50%);
+  display: flex;
+  position: relative;
+
+  &::before {
+    background-image: url("../assets/bg-pattern-2.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    @include respond-tab {
+      background-size: 40%;
+      top: -5rem;
+    }
+
+    @include respond-desktop {
+      background-size: 30%;
+      background-position: 38% 0%;
+    }
+  }
+
+  @include respond-tab {
+    background-color: $color-dark;
+    background-image: unset;
+  }
+
+  @include respond-desktop {
+    margin-top: 30rem;
+  }
+}
+
+.section-footer {
+  padding: 6.4rem 2.4rem 8rem 2.4rem;
+
+  @include respond-tab {
+    padding-top: 18rem;
+  }
+}
